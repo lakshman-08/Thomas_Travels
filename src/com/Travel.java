@@ -3,6 +3,8 @@ package com;
 import java.util.ArrayList;
 
 public class Travel {
+	
+	//Checking whether the driver is belongs to Car Driver or not
 	public boolean isCarDriver(Driver drivertype)
 	{
 		if(drivertype.getCategory().equalsIgnoreCase("Car"))
@@ -12,6 +14,7 @@ public class Travel {
 		return false;
 	}
 	
+	//retreiving the driver details by taking the ID
 	public String retrivebyDriverId(ArrayList<Driver> driverlist,int DriverId)
 	{
 		int flag=0;
@@ -33,7 +36,7 @@ public class Travel {
 		
 	}
 	
-	
+	//Couting the total drivers count by choosing their caterogy 
 	public int retriveCountofDriver(ArrayList<Driver> totaldrivers,String category)
 	{
 		int countofDrivers=0;
